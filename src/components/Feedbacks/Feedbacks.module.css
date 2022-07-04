@@ -1,7 +1,7 @@
 .feedbacks {
     padding: 30px;
     margin: 0;
-    color: gray;
+    color: rgb(99, 97, 97);
     box-shadow: 2px 4px 4px 6px rgb(179, 157, 157);
 }
 
@@ -16,11 +16,19 @@
 }
 .button {
     cursor: pointer;
-    padding: 10px 40px;
+    padding: 10px 50px;
     border-radius: 5px;
     border: none;
+
+    font-size: 20px;
     background-color: rgb(118, 161, 147);
     color: rgb(247, 242, 236);
+
+    transition: background-color 250ms linear;
+}
+
+.button:hover {
+    background-color: rgb(136, 191, 239);
 }
 
 .feedbacksList {
@@ -33,9 +41,9 @@
 .feedbacksItem {
     display: flex;
     align-items: center;
-    column-gap: 20px;
+    padding: 20px 0;
 }
 
-p {
+h2, p {
     margin: 0;
 }
