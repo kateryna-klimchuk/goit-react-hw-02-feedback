@@ -7,3 +7,11 @@
     color: #010101;
     padding: 40px;
 }
+
+.feedbacks {
+    padding: 30px;
+    margin: 0;
+    font-size: 22px;
+    color: rgb(99, 97, 97);
+    box-shadow: 2px 4px 4px 6px rgb(179, 157, 157);
+}
