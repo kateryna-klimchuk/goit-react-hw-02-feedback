@@ -29,9 +29,10 @@ state = {
     }
 
     render() {
-        const totalFeedbacks = this.countTotalFeedback();
+      const totalFeedbacks = this.countTotalFeedback();
       const positivePersentage = this.countPositiveFeedbackPercentage();
-      const options = Object.keys(this.state)
+      const options = Object.keys(this.state);
+      const { good, neutral, bad } = this.state;
 
       return (
           <div className={css.container}>
@@ -44,7 +45,7 @@ state = {
             {totalFeedbacks === 0 ? 
               <Notification message="There is no feedback" />
               : (                
-              <Statistics good={this.state.good} neutral={this.state.neutral} bad={this.state.bad} total={totalFeedbacks} positivePercentage={positivePersentage} />
+              <Statistics good={good} neutral={neutral} bad={bad} total={totalFeedbacks} positivePercentage={positivePersentage} />
   )}
             </Section>
       
